@@ -1,0 +1,94 @@
+/*---------------------------------------------*\
+              Mise en page de mon CV
+\*---------------------------------------------*/
+
+
+body{
+  background-color: #E9EBEE;
+  width: 100%;
+}
+
+.conteneur {
+    width: 100%;
+    max-width: 960px;
+    padding : 10px 10px 10px 10px;
+    margin : 15px 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* entete de la page */
+
+header{
+    width: 100%;
+    background: url(../images/skulls.png)repeat fixed;
+	  font: 1.5em "liberation Serif",serif;
+	  color: rgb(17,107,138);
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(99,124,138);
+}
+
+.titre{
+  margin: auto;
+}
+
+/* Corps de la page */
+
+main {
+    background: url(../images/symphony.png) repeat fixed;
+}
+
+/*.paragraphe{
+  width: 33%;
+  padding: 10px 10px 10px 10px;
+}*/
+
+.justifie{
+  text-align: justify;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+ul {
+  padding: 10px 10px 10px 10px;
+  margin-right: 20px;
+  text-align: justify;
+  list-style-type: square;
+}
+
+li {
+  padding: 5px;
+}
+
+/* Pied de page */
+
+footer{
+    background: url(../images/wov.png)repeat fixed;
+  }
+
+.coordonnee{
+    text-align: center;
+    font: "liberation Serif",serif;
+    margin: auto;
+}
+
+
+/* Personalisation des liens */
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000080;
+    text-decoration: underline;
+}
