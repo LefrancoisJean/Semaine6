@@ -1,101 +1,264 @@
-/*---------------------------------------------*\
-              Mise en page de mon CV
-\*---------------------------------------------*/
-
-
-/*body{
-  background-color: #E9EBEE;
-  width: 100%;
+body{
+  background-image: url(../images/leather_1_@2X.png);
+  color: white;
+  font-weight: bold;
 }
 
-.conteneur {
-    width: 100%;
-    max-width: 960px;
-    padding : 10px 10px 10px 10px;
-    margin : 15px 15px 15px 15px;
-    display: flex;
-    justify-content: space-between;
-}*/
-/* entete de la page */
+/*Positionnement de l'entete*/
 
 header{
-  background-color: rgb(55, 187, 210);
+  background-color: rgb(55,187,210);
+  width: 83.5%;
+  margin: auto;
+  border-bottom: 5px solid rgb(65,65,65);
 }
 
 .haut_de_page{
   display: flex;
   flex-direction: row;
-  width: 100%;
-  padding: 20px 20px 20px 20px;
-	font: 1.5em "liberation Serif",serif;
-	text-shadow: 3px 3px 3px rgb(99,124,138);
+  font-size: 1.5em;
 }
 
-.bordure{
-  border: 2px solid black;
+.tux{
+  margin:1% 1% 1% 1%;
+  border-radius: 100%;
 }
 
-/*.titre{
+.name{
+  margin-top: 1.5%;
+}
+
+.points{
+  margin-top: 1.5%;
+  margin-left: 80%;
+}
+
+/*Boites - cadre général*/
+
+.grande_boite {
+  height: 330px;
+  text-align: center;
+  padding-top: 30%;
+}
+
+.petite_boite{
+  height: 150px;
+  text-align: center;
+  padding-top: 30%;
+}
+
+.bandeau{
+  height: 30px;
+  padding: 5px 0 0 10px;
+}
+
+/*LEADERBOARD*/
+
+.leaderboard{
+  background-color: rgb(245,245,245);
+  border-right: 5px solid rgb(65,65,65);
+}
+.leaderboard_bandeau{
+  background-color: rgb(153,153,153);
+  border-right: 5px solid rgb(65,65,65);
+}
+
+.leaderboard_bandeau span{
+  right: -240px;
+}
+
+/*ENTERTAIMENT*/
+
+.entertaiment{
+  background-color: rgb(250,138,126);
+  margin-right: -15px;
+  border-top: 5px solid rgb(65,65,65);
+  border-right: 5px solid rgb(65,65,65);
+}
+
+.entertaiment_bandeau{
+  background-color: rgb(245,80,77);
+  margin-right: -15px;
+  border-right: 5px solid rgb(65,65,65);
+}
+
+.entertaiment_bandeau span{
+  left: 35%;
+}
+
+/*SPORT*/
+
+.sport{
+  margin-left: -15px;
+  background-color: rgb(180,246,201);
+  border-top: 5px solid rgb(65,65,65);
+  border-right: 5px solid rgb(65,65,65);
+}
+
+.sport_bandeau{
+  background-color: rgb(127,83,198);
+  margin-left: -15px;
+  border-right: 5px solid rgb(65,65,65);
+}
+
+.sport_bandeau span{
+  left: 60%;
+}
+
+/*FOOD AND DRINK*/
+
+.food{
+  background-color: rgb(183,246,201);
+  margin-right: -15px;
+  margin-left: -30px;
+}
+
+.food_bandeau{
+  background-color: rgb(53,234,181);
+  margin-right: -15px;
+  margin-left: -30px;
+  color: black;
+}
+
+.food_bandeau span{
+  left: 30%;
+}
+
+/* GENERAL KNOWLEDGE*/
+
+.general{
+  margin-left: -30px;
+  background-color: rgb(251,255,134);
+  border-right: 5px solid rgb(65,65,65);
+  border-left: 5px solid rgb(65,65,65);
+}
+
+.general_bandeau{
+  background-color: rgb(249,239,26);
+  margin-left: -30px;
+  border-right: 5px solid rgb(65,65,65);
+  border-left: 5px solid rgb(65,65,65);
+  color: black;
+}
+
+.general_bandeau span{
+  left: 15%;
+}
+
+/*GEOGRAPHY*/
+
+.geography{
+  background-color: rgb(250,138,126);
+  border-right: 5px solid rgb(65,65,65);
+  border-top: 5px solid rgb(65,65,65);
+  margin-left: -30px;
+}
+.geography_bandeau{
+  background-color: rgb(245,80,77);
+  border-right: 5px solid rgb(65,65,65);
+  margin-left: -30px;
+}
+
+.geography_bandeau span{
+  right: -280px;
+}
+
+/*HYSTORY*/
+
+.hystory{
+  background-color: rgb(183,246,201);
+  margin-left: -30px;
+  padding-top: 15%;
+}
+
+.hystory_bandeau{
+  background-color: rgb(53,234,181);
+  margin-left: -30px;
+}
+
+.hystory_bandeau span{
+  left: 80%;
+}
+
+/*SCIENCE ET NATURE*/
+
+.science{
+  background-color: rgb(183,246,201);
+  margin-right: -15px;
+  margin-left: -30px;
+  border-top: 5px solid rgb(65,65,65);
+}
+
+.science_bandeau{
+  background-color: rgb(53,234,181);
+  margin-right: -15px;
+  margin-left: -30px;
+}
+
+.science_bandeau span{
+  left: 20%;
+}
+
+/* TV & MOVIES*/
+
+.movies{
+  margin-left: -30px;
+  background-color: rgb(180,131,255);
+  border-top: 5px solid rgb(65,65,65);
+  border-left: 5px solid rgb(65,65,65);
+}
+
+.movies_bandeau{
+  background-color: rgb(127,83,198);
+  margin-left: -30px;
+  border-left: 5px solid rgb(65,65,65);
+}
+
+.movies_bandeau span{
+  left: 40%;
+}
+
+/*MUSIC*/
+
+.music{
+  background-color: rgb(126,254,255);
+  margin-right: -15px;
+  margin-left: -30px;
+  border-top: 5px solid rgb(65,65,65);
+}
+
+.music_bandeau{
+  background-color: rgb(62,168,246);
+  margin-right: -15px;
+  margin-left: -30px;
+}
+
+.music_bandeau span{
+  left: 60%;
+}
+
+/* PROFILE*/
+
+.profile{
+  margin-left: -30px;
+  background-color: rgb(245,245,245);
+  border-top: 5px solid rgb(65,65,65);
+  border-left: 5px solid rgb(65,65,65);
+}
+
+.profile_bandeau{
+  background-color: rgb(153,153,153);
+  margin-left: -30px;
+  border-left: 5px solid rgb(65,65,65);
+}
+
+.profile_bandeau span{
+  left: 65%;
+}
+
+
+.pieds{
+  border-top: 5px solid rgb(65,65,65);
+  width: 83.5%;
   margin: auto;
 }
-
- Corps de la page
-
-main {
-    background: url(../images/symphony.png) repeat fixed;
-}
-
-.paragraphe{
-  width: 33%;
-  padding: 10px 10px 10px 10px;
-}
-
-.justifie{
-  text-align: justify;
-}
-
-h2 {
-  text-align: center;
-  text-decoration: underline;
-}
-
-ul {
-  padding: 10px 10px 10px 10px;
-  margin-right: 20px;
-  text-align: justify;
-  list-style-type: square;
-}
-
-li {
-  padding: 5px;
-}
-
- Pied de page
-
-footer{
-    background: url(../images/wov.png)repeat fixed;
-  }
-
-.coordonnee{
-    text-align: center;
-    font: "liberation Serif",serif;
-    margin: auto;
-}
-
-
- Personalisation des liens
-
-a:link{
-    color: black;
-    text-decoration: none;
-}
-
-a:visited{
-    color: black;
-    text-decoration: none;
-}
-
-a:hover{
-    color: #000080;
-    text-decoration: underline;
-}*/
